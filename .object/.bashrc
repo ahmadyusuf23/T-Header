@@ -39,9 +39,9 @@ PS4='+ '
 case "$TERM" in
 	xterm*|rxvt*)
 		if [ "$(id -u)" = "0" ]; then
-			PS1="\\[\\e]0;termux (root): \\w\\a\\]$PS1"
+			PS1="\\[\\e]0;localhost (root): \\w\\a\\]$PS1"
 		else
-			PS1="\\[\\e]0;termux: \\w\\a\\]$PS1"
+			PS1="\\[\\e]0;localhost: \\w\\a\\]$PS1"
 		fi
 		;;
 	*)
